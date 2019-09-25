@@ -1,0 +1,8 @@
+#Weighted Sum Formula is (sum of weigths with input)/sum(weights)
+N = int(input())
+X = list(map(int,input().strip().split()))
+W = list(map(int, input().strip().split()))
+weights = []
+for i in range(N):
+    weights.append(X[i] * W[i])
+print(round(sum(weights)/sum(W),1))
